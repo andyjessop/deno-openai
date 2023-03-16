@@ -19,7 +19,7 @@ cp .env.example .env
 Then add your API key to the `OPENAI_API_KEY=` variable.
 
 ```
-OPENAI_API_KEY=sk-V7cSYslk205sgiOmsdvwATsYss2o5ssdDqtqUzAT3
+OPENAI_API_KEY=your_key_here
 ```
 
 Now you can run the app:
