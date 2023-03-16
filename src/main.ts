@@ -1,7 +1,5 @@
 import { dotenv, flags, openai } from './deps.ts';
 
-console.log(flags.parse(Deno.args));
-
 main();
 
 async function main() {
@@ -14,11 +12,13 @@ async function main() {
 	const temperature = args.temperature ?? 0;
 	const maxTokens = args.maxTokens ?? 50;
 
-	console.info('Creating completion with parameters:');
+	console.info('Creating a completion with parameters:');
+	console.info('----------------------------------');
 	console.info(`model: ${model}`);
 	console.info(`prompt: ${prompt}`);
 	console.info(`temperature: ${temperature}`);
 	console.info(`maxTokens: ${maxTokens}`);
+	console.info('----------------------------------\n');
 
 	const completion = await ai.createCompletion({
 		model,
