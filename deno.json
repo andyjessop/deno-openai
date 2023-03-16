@@ -15,6 +15,7 @@
     }
   },
   "tasks": {
-    "start": "deno run --allow-read --allow-env --allow-net src/main.ts"
+    "start": "deno run --allow-read --allow-env --allow-net src/main.ts",
+    "compile": "deno compile --output dist/main.exe --allow-read --allow-env --allow-net src/main.ts"
   }
 }

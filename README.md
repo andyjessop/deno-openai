@@ -53,3 +53,13 @@ Note that you can use a few command line arguments to modify the completion sett
 ```
 deno task start --prompt "Write a typescript function to pipe functions" --model "code-davinci-002" --maxTokens 200
 ```
+
+## Compiling to an executable
+
+There is a task already set-up to compile to a binary format. Just run:
+
+```
+deno task compile
+```
+
+This will create a `dist/main.exe` which you can then run with `./dist/main.exe`. (See the `deno.json` file for configuration).
